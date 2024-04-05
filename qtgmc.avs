@@ -1,0 +1,6 @@
+SetFilterMTMode("QTGMC", 2)
+FFMPEGSource2("<VIDEO NAME>.mkv", atrack=1)
+AssumeBFF()
+QTGMC(preset="Slower", EdiThreads=14)
+BilinearResize(720,540)
+Prefetch(12)
